@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Aplikacja1.Figury;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,12 @@ namespace Aplikacja1
     {
         static void Main(string[] args)
         {
+            Pozycja p = new Pozycja("B5");
+            Pozycja p2 = new Pozycja("D4");
+            Figura f = new Pionek(p,Kolor.KOLOR_BIALY);
+            Console.WriteLine(f.CzyMoznaPrzesunac(p2));
+
+
         }
     }
 }
